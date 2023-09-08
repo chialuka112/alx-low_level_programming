@@ -12,9 +12,6 @@ int main(void)
 {
 	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2
-
 	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
