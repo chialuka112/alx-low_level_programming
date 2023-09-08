@@ -1,8 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+/**
+ * main - prints numbers between 0 to 9 and letters between a to f.
+ *
+ * Return: Always 0 (Success)
+ */
+/* betty style doc for function main goes there */
 int main(void)
 {
 	int i;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2
 
 	for (i = 48; i < 58; i++)
 	{
