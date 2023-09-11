@@ -1,20 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
- * return: always 0 (Success)
- */
+ * main - prints all possible different combinations of three digits.
+ *
+ * Return: always 0 (Success)
+ **/
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char c;
+	int n, m, i;
 
-	c = 'A';
-	while
-		(c <= '2') {
-			putchar (c);
-			c++;
+	for (n = 48; n < 58; n++)
+	{
+		for (m = 49; m < 58; m++)
+		{
+			for (i = 50; i < 58; i++)
+			{
+				if (i > m && m > n)
+				{
+					putchar(n);
+					putchar(m);
+					putchar(i);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
-	putchar ('\n');
+	}
+	putchar('\n');
 	return (0);
 }
